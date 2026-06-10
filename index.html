@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather & City Lookup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Weather & City Lookup</h1>
+    <p>Type a city name to see current weather.</p>
+  </header>
+
+  <main class="main">
+    <section class="search-section">
+      <label for="city-input">City</label>
+      <input
+        type="text"
+        id="city-input"
+        placeholder="Start typing a city name..."
+        autocomplete="off"
+      />
+      <ul id="suggestions" class="suggestions"></ul>
+      <button id="search-btn">Get Weather</button>
+      <p id="error-message" class="error-message"></p>
+    </section>
+
+    <section id="weather-card" class="weather-card hidden">
+      <h2 id="weather-city"></h2>
+      <p id="weather-description"></p>
+      <div class="weather-main">
+        <div class="temp-block">
+          <span id="weather-temp" class="temp"></span>
+          <span class="unit">°C</span>
+        </div>
+        <div class="details">
+          <p>Humidity: <span id="weather-humidity"></span>%</p>
+          <p>Feels like: <span id="weather-feels"></span>°C</p>
+        </div>
+      </div>
+      <img id="weather-icon" alt="Weather icon" class="weather-icon" />
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Module #3 – Language: JavaScript | CSE 310 - Smith Eutrope Zephirin</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
