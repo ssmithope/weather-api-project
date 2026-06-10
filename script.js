@@ -2,7 +2,7 @@
 // Configuration
 // ===============================
 
-const OPENWEATHER_API_KEY = "";
+const OPENWEATHER_API_KEY = "b03dbda40692f99ae68b620bbb430346";
 
 
 // Base URLs
@@ -130,7 +130,7 @@ async function handleSearch() {
 }
 
 // RapidAPI key 
-const GEODB_API_KEY = "MY_RAPIDAPI_KEY_HERE";
+const GEODB_API_KEY = "0b77b50c05msh572d5a9a9aefa29p179e36jsn169dade46918";
 
 
 /**
