@@ -2,7 +2,7 @@
 // Configuration
 // ===============================
 
-const OPENWEATHER_API_KEY = "MY_OPENWEATHER_API_KEY_HERE";
+const OPENWEATHER_API_KEY = "b03dbda40692f99ae68b620bbb430346";
 
 
 // Base URLs
@@ -73,9 +73,7 @@ function clearError() {
  * @returns {Promise<object>} - Weather data JSON.
  */
 async function fetchWeather(cityName) {
-  const url = `${OPENWEATHER_BASE_URL}?q=${encodeURIComponent(
-    cityName
-  )}&appid=${OPENWEATHER_API_KEY}&units=metric`;
+  const url = `${OPENWEATHER_BASE_URL}?q=${encodeURIComponent(cityName)}&appid=${OPENWEATHER_API_KEY}&units=metric`;
 
   const response = await fetch(url);
   if (!response.ok) {
@@ -83,6 +81,7 @@ async function fetchWeather(cityName) {
   }
   return response.json();
 }
+
 
 /**
  * Renders weather data into the weather card section.
