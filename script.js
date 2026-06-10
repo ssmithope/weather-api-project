@@ -2,7 +2,7 @@
 // Configuration
 // ===============================
 
-const OPENWEATHER_API_KEY = "b03dbda40692f99ae68b620bbb430346";
+const OPENWEATHER_API_KEY = "";
 
 
 // Base URLs
